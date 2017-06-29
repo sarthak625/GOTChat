@@ -8,6 +8,10 @@
       BASIC BODY STYLES
 =========================================*/
 
+
+/* Styles for the landing page
+*/
+
 body{
   font-family: gotFont !important;
   text-align: center;
@@ -65,6 +69,12 @@ hr {
 .btn:hover{
   background-color: #65666b;
   transition: all 0.5s;
+}
+
+.footer-content{
+  padding: 10px;
+  background-color: grey;
+  color: white;
 }
 
 /*|01010011|01100001|01110010|01110100|01101000|01100001|01101011|00100000|01001110|01100101|01100111|01101001|00001101*/

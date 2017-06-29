@@ -11,6 +11,10 @@ app.get('/',function(req,res){
   res.render('index');
 });
 
+app.get('/chatroom',function(req,res){
+  res.render('chatroom');
+})
+
 http.listen((process.env.port || 3000),function(){
   console.log("Server has started");
 });
