@@ -1,8 +1,12 @@
-
+/* CUSTOM FONT */
 @font-face{
   font-family: gotFont;
   src: url('../fonts/GameOfThrones.ttf');
 }
+
+/*========================================
+      BASIC BODY STYLES
+=========================================*/
 
 body{
   font-family: gotFont !important;
@@ -19,6 +23,16 @@ header{
 
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+
 .container h1{
   letter-spacing: 12;
 
@@ -26,11 +40,15 @@ header{
 }
 
 .container{
+
   text-align: center;
   width: 100%;
   display: inline-block;
   margin: 20% auto;
   background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  background: -moz-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  background: -ms-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  background: -o-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
 }
 
 #enter{
@@ -38,14 +56,30 @@ header{
   margin: 25px auto;
   padding: 10px 40px;
 
-
 }
 
+#enter a{
+  color: black;
+}
+
+.btn:hover{
+  background-color: #65666b;
+  transition: all 0.5s;
+}
+
+/*|01010011|01100001|01110010|01110100|01101000|01100001|01101011|00100000|01001110|01100101|01100111|01101001|00001101*/
+/*============================================================
+                  MEDIA QUERIES
+=============================================================*/
 @media(max-width: 522px){
   header{
     background-position:right;
   }
   .container h1{
     color: white;
+  }
+
+  .container{
+    margin-top: 45%;
   }
 }
