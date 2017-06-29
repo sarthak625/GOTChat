@@ -1,0 +1,51 @@
+
+@font-face{
+  font-family: gotFont;
+  src: url('../fonts/GameOfThrones.ttf');
+}
+
+body{
+  font-family: gotFont !important;
+  text-align: center;
+}
+
+header{
+  height: 100%;
+  width: 100%;
+
+  background: url('../img/jon-snow.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.container h1{
+  letter-spacing: 12;
+
+  color: #fff;
+}
+
+.container{
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin: 20% auto;
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
+
+#enter{
+  display: block;
+  margin: 25px auto;
+  padding: 10px 40px;
+
+
+}
+
+@media(max-width: 522px){
+  header{
+    background-position:right;
+  }
+  .container h1{
+    color: white;
+  }
+}

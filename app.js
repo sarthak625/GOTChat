@@ -1,9 +1,16 @@
-var app = require('express')();
+var express     = require('express');
+var app         = express();
+var http        = require('http').Server(app);
+var path        = require('path');
+
+
+app.set('view engine','ejs');
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/',function(req,res){
-  res.send('Hello');
+  res.render('index');
 });
 
-app.listen((process.env.port || 3000),function(){
+http.listen((process.env.port || 3000),function(){
   console.log("Server has started");
 });
