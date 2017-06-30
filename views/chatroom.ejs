@@ -20,27 +20,38 @@
   <body>
       <img src="" alt="">
       <div class="chatbox">
-        <div class="row">
+
+        <!-- User form-->
+        <div id="userForm">
+          <h1>Haaaallltttt..  Who  approaches <%= house%> </h1>
+          <form action="">
+            <input type="text" placeholder="Enter your name" class="form-control">
+            <button id="submit">Submit</button>
+          </form>
+        </div>
+
+
+        <div id="main" class="row">
           <div class="chat-main col-lg-7 col-sm-6" id="wrapper">
               <ul id="messages">
 
               </ul>
 
-              <form action="">
-                <input type="text" id="message" autocomplete="off">
-                <button id="send">Send</button>
+              <form action="" id="send-message">
+                <div class="form-group">
+                  <input type="text" id="message" autocomplete="off">
+                  <button id="send">Send</button>
+                </div>
+
               </form>
 
-              <div class="scrollbar">
-                <div class="slider">
 
-                </div>
-              </div>
           </div>
 
 
           <div class="people col-lg-4 col-sm-3">
-            <ul class="people-list">
+            <h3>Online Users</h3>
+            <ul class="people-list" id="users">
               <li></li>
             </ul>
           </div>
@@ -55,19 +66,27 @@
     <script src="/js/bootstrap.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script>
-      
+
 
       $(function () {
-        var socket = io();
-        $('form').submit(function(){
+        var socket = io.connect();
+
+
+        $('#send-message').submit(function(){
           socket.emit('chat message', $('#message').val());
           $('#message').val('');
           return false;
         });
 
         socket.on('chat message', function(msg){
-          $('#messages').append($('<li>').text(msg));
+
+          $('#messages').append('<div class="m">'+msg+'</div>');
+
+
         });
+
+
+
       });
 
 

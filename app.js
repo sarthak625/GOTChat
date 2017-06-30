@@ -11,6 +11,8 @@ var io          = require('socket.io')(http);
 
 users = []
 
+conn = 0
+
 app.set('view engine','ejs');
 
 app.use(express.static(path.join(__dirname, 'public')))
@@ -58,10 +60,12 @@ app.get('/chatroom/:id?',function(req,res){
     var id = req.params.id;
     var isValid = false;
     var image;
+    var house;
     for (var i=0;i<houseArr.length;i++){
       if (id=== houseArr[i].id){
         isValid = true;
         image = houseArr[i].image;
+        house = houseArr[i].name;
         console.log("Found");
         break;
       }
@@ -70,7 +74,8 @@ app.get('/chatroom/:id?',function(req,res){
     if (isValid){
       res.render('chatroom',{
         title: id.toUpperCase()  + ' CHAT',
-        image: image
+        image: image,
+        house: house
       })
     }
     else{
@@ -78,10 +83,15 @@ app.get('/chatroom/:id?',function(req,res){
     }
 });
 
+console.log('A user connected');
 io.on('connection',function(socket){
-  console.log('A user connected');
-  socket.on('disconnect',function(){
-    console.log('A user disconnected');
+  conn+=1;
+  console.log('A user connected: '+conn+' users');
+  socket.on('disconnect',function(data){
+
+    //io.emit('chat message',"");
+    conn-=1;
+    console.log('A user disconnected: '+conn+' users');
   });
 
   socket.on('chat message', function(msg){

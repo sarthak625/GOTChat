@@ -78,6 +78,40 @@ hr {
 Styles for chatroom
 =========================================================*/
 
+#userForm{
+  display: inline-block;
+  width: 80%;
+  height: 50%;
+  margin: 200px auto;
+  text-align: center;
+}
+
+
+#userForm h1{
+  color: white;
+
+}
+
+#submit{
+  margin-top: 10px;
+}
+
+#main{
+  display: none;
+}
+
+.m{
+  width: 80%;
+  height: auto;
+  text-align: left;
+  color: white;
+}
+
+.people h3
+{
+  color: white;
+  text-decoration: underline;
+}
 
 li{
   list-style: none;
@@ -129,9 +163,6 @@ form{
   border-radius: 10px;
   left: -7px;
 }
-
-
-
 
 
 .chat-main{
