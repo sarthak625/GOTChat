@@ -84,15 +84,24 @@ li{
 }
 
 form{
-  margin-top: 70%;
+  display: block;
+  float: clear;
+  height: 10%;
+  width: 90%;
+}
+
+#messages{
+  height: 90%;
 }
 
 #message{
+  display: inline;
   width: 90%;
   padding: 8px;
 }
 
 #send{
+  display: inline;
   padding: 8px;
 }
 
@@ -158,9 +167,20 @@ form{
 
   .chat-main{
     width: 88%;
+
+    display: block;
   }
 
   .chatbox{
+    margin: 1px;
     background-position: center;
+  }}
+
+  form{
+    display: inline-block;
+  }
+
+  #messages{
+    height: 80%;
   }
 }

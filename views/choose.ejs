@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <% include partials/head %>
+  </head>
+
+  <body>
+    <div class="menu">
+      <h1>Choose your house</h1>
+      <div class="container">
+        <div class="row">
+          <%houseArr.forEach(function(house){%>
+            <div class="thumbnails">
+              <img src="/img/<%= house.poster%>" class="img-thumbnail" alt="">  
+            </div>
+
+          <%})%>
+        </div>
+      </div>
+    </div>
+
+    <%include partials/footer %>
+    <% include partials/script %>
+  </body>
+</html>
