@@ -12,9 +12,6 @@
 /* Styles for the landing page
 */
 
-li{
-  list-style: none;
-}
 
 body{
   font-family: gotFont !important;
@@ -80,6 +77,24 @@ hr {
 /*==========================================================
 Styles for chatroom
 =========================================================*/
+
+
+li{
+  list-style: none;
+}
+
+form{
+  margin-top: 70%;
+}
+
+#message{
+  width: 90%;
+  padding: 8px;
+}
+
+#send{
+  padding: 8px;
+}
 
 .chatbox{
   width: 100%;
