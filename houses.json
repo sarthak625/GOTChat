@@ -16,14 +16,6 @@
       "house-members": ["Tyrion Lannister","Jamie Lannister","Cersei Lannister"]
     },
     {
-      "name": "House Targaryen",
-      "words": "Fire And Blood",
-      "description": "House Targaryen is a former Great House of Westeros and was the ruling royal House of the Seven Kingdoms for three centuries since it conquered and unified the realm, before it was deposed during Robert's Rebellion and House Baratheon replaced it as the new royal House. The few surviving Targaryens fled into exile to the Free Cities of Essos across the Narrow Sea. Currently based on Dragonstone off of the eastern coast of Westeros, House Targaryen seeks to retake the Seven Kingdoms from House Lannister, who formally replaced House Baratheon as the royal House following the destruction of the Great Sept of Baelor.House Targaryen's sigil is a three-headed red dragon on a black background, and their words are 'Fire and Blood'.",
-      "poster": "targaryen.jpg",
-      "image": "targaryen-main.jpg",
-      "house-members": ["Danerys Targaryen","Jon Snow"]
-    },
-    {
       "name": "House Tyrell",
       "words": "Growing Strong",
       "description": "House Tyrell of Highgarden is one of the Great Houses of Westeros. It rules over the Reach, a vast, fertile, and heavily-populated region of southwestern Westeros, from their castle-seat, Highgarden. Formerly led by Lord Mace Tyrell, his mother, the indomitable Olenna Tyrell, stands as the last known member of the house. Mace's son Loras was a noted tournament knight (and, secretly, the lover of Lord Renly Baratheon). Mace's daughter Margaery married Renly when he crowned himself king, to cement the alliance between Renly and her father. Following Renly's death, Margaery was then married to King Joffrey Baratheon before his assassination at his wedding feast. She was then married to his younger brother, King Tommen Baratheon. Olenna Tyrell assumed House Tyrell's lordship as Margaery Tyrell, Loras Tyrell, and Mace Tyrell were killed by wildfire at the destruction of the Great Sept of Baelor. Under Lady Olenna, who has served as the head of the house since, House Tyrell has aligned itself with House Targaryen in opposition against Queen Cersei I for orchestrating the demise of most of the main branch of the Tyrell family.",
@@ -39,6 +31,14 @@
       "image": "greyjoy-main.jpeg",
       "house-members":["Yara Greyjoy","Theon Greyjoy","Euron Greyjoy"]
 
+    },
+    {
+      "name": "House Targaryen",
+      "words": "Fire And Blood",
+      "description": "House Targaryen is a former Great House of Westeros and was the ruling royal House of the Seven Kingdoms for three centuries since it conquered and unified the realm, before it was deposed during Robert's Rebellion and House Baratheon replaced it as the new royal House. The few surviving Targaryens fled into exile to the Free Cities of Essos across the Narrow Sea. Currently based on Dragonstone off of the eastern coast of Westeros, House Targaryen seeks to retake the Seven Kingdoms from House Lannister, who formally replaced House Baratheon as the royal House following the destruction of the Great Sept of Baelor.House Targaryen's sigil is a three-headed red dragon on a black background, and their words are 'Fire and Blood'.",
+      "poster": "targaryen.jpg",
+      "image": "targaryen-main.jpg",
+      "house-members": ["Danerys Targaryen","Jon Snow"]
     }
   ]
 }

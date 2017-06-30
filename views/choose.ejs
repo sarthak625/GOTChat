@@ -6,16 +6,17 @@
   <body>
     <div class="menu">
       <h1>Choose your house</h1>
-      <div class="container">
-        <div class="row">
-          <%houseArr.forEach(function(house){%>
-            <div class="thumbnails">
-              <img src="/img/<%= house.poster%>" class="img-thumbnail" alt="">  
-            </div>
 
-          <%})%>
+        <div class="row">
+            <div class="thumbnails">
+              <%houseArr.forEach(function(house){%>
+
+                <img src="/img/<%= house.poster%>" class="img-thumbnail" alt="">
+
+              <%})%>
+          </div>
         </div>
-      </div>
+
     </div>
 
     <%include partials/footer %>
