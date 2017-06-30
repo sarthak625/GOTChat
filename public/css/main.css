@@ -1,5 +1,5 @@
-/* CUSTOM FONT */
 @font-face{
+  /* CUSTOM FONT */
   font-family: gotFont;
   src: url('../fonts/GameOfThrones.ttf');
 }
@@ -11,6 +11,10 @@
 
 /* Styles for the landing page
 */
+
+li{
+  list-style: none;
+}
 
 body{
   font-family: gotFont !important;
@@ -59,10 +63,6 @@ hr {
   display: block;
   margin: 25px auto;
   padding: 10px 40px;
-
-}
-
-#enter a{
   color: black;
 }
 
@@ -75,6 +75,46 @@ hr {
   padding: 10px;
   background-color: grey;
   color: white;
+}
+
+/*==========================================================
+Styles for chatroom
+=========================================================*/
+
+.chatbox{
+  width: 100%;
+  height: 100%;
+  background: url('../img/khal-drogo.png');
+  background-size: cover;
+}
+
+.chat-main{
+  width: 60%;
+  diplay: inline;
+  height: 90%;
+
+  margin: 10px;
+  margin-left: 22px;
+
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  background: -moz-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  background: -ms-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  background: -o-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
+
+.people{
+  width: 20%;
+  height: 90%;
+  display: inline;
+  margin: 10px;
+
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  background: -moz-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  background: -ms-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  background: -o-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+
+
+
 }
 
 /*|01010011|01100001|01110010|01110100|01101000|01100001|01101011|00100000|01001110|01100101|01100111|01101001|00001101*/
@@ -91,5 +131,21 @@ hr {
 
   .container{
     margin-top: 45%;
+  }
+
+
+
+}
+@media(max-width: 800px){
+  .people{
+    display: none;
+  }
+
+  .chat-main{
+    width: 88%;
+  }
+
+  .chatbox{
+    background-position: center;
   }
 }
