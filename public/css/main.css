@@ -90,8 +90,16 @@ form{
   width: 90%;
 }
 
+#messages li{
+  color: white;
+  text-align: left;
+  margin-top: 12px;
+}
+
+
 #messages{
   height: 90%;
+  overflow: hidden;
 }
 
 #message{
@@ -105,9 +113,26 @@ form{
   padding: 8px;
 }
 
-.chatbox{
-
+.scrollbar{
+  width: 5px;
+  height: 100%;
+  background: #49505a;
+  position: fixed;
+  top: 0;
+  right: 9px;
+  z-index: 1;
 }
+
+.slider{
+  width: 20px;
+  background: #5EAEE3;
+  border-radius: 10px;
+  left: -7px;
+}
+
+
+
+
 
 .chat-main{
   width: 60%;
@@ -174,6 +199,8 @@ hr.choose-hr:after {
 }
 
 
+
+
 /*|01010011|01100001|01110010|01110100|01101000|01100001|01101011|00100000|01001110|01100101|01100111|01101001|00001101*/
 /*============================================================
                   MEDIA QUERIES
@@ -216,6 +243,7 @@ hr.choose-hr:after {
   #messages{
     height: 80%;
   }
+
 
   .thumbnails{
     column-count: 2;

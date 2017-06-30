@@ -1,19 +1,48 @@
+/*=================================================
+        Packages
+===================================================
+*/
 var express     = require('express');
 var app         = express();
 var http        = require('http').Server(app);
 var path        = require('path');
 var housesJSON  = require('./houses.json');
+var io          = require('socket.io')(http);
+
+users = []
 
 app.set('view engine','ejs');
+
 app.use(express.static(path.join(__dirname, 'public')))
+
+//Extract the Array from the JSON file
 var houseArr = housesJSON.house;
 
+
+/*=================================================
+        ROUTES
+===================================================
+*/
+
+
+//Landing Page
 app.get('/',function(req,res){
   res.render('index',{
     title: 'Welcome'
   });
 });
 
+
+//Choose you house route
+app.get('/choose',function(req,res){
+
+    res.render('choose',{
+      title: 'Choose Your house',
+      houseArr: houseArr
+    })
+});
+
+//Chatroom-default
 app.get('/chatroom',function(req,res){
 
       res.render('chatroom',{
@@ -24,15 +53,7 @@ app.get('/chatroom',function(req,res){
 
 });
 
-
-app.get('/choose',function(req,res){
-
-    res.render('choose',{
-      title: 'Choose Your house',
-      houseArr: houseArr
-    })
-});
-
+//Chatroom-house
 app.get('/chatroom/:id?',function(req,res){
     var id = req.params.id;
     var isValid = false;
@@ -55,6 +76,19 @@ app.get('/chatroom/:id?',function(req,res){
     else{
       res.send('Not found');
     }
+});
+
+io.on('connection',function(socket){
+  console.log('A user connected');
+  socket.on('disconnect',function(){
+    console.log('A user disconnected');
+  });
+
+  socket.on('chat message', function(msg){
+    console.log('message: ' + msg);
+    io.emit('chat message',msg);
+  });
+
 });
 
 
