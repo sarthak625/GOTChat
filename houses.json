@@ -1,5 +1,6 @@
 {
   "house":[{
+      "id": "stark",
       "name": "House Stark",
       "words": "Winter is Coming",
       "description": "House Stark of Winterfell is a Great House of Westeros, ruling over the vast region known as the North and the Vale as Kings in the North from their seat in Winterfell, recently retaken by the Starks from House Bolton. It is by far one of the oldest lines of Westerosi nobility, claiming a line of descent stretching back over eight thousand years. The head of the house is the Lord of Winterfell. Before the Targaryen conquest, the leaders of House Stark ruled over the region as the Kings in the North. Jon Snow is the current King in the North and the Vale, partially due to the allegiance of Petyr Baelish, the Lord Regent of the Vale, to House Stark.",
@@ -8,6 +9,7 @@
       "house-members": ["Arya Stark","Sansa Stark","Bran Stark","Benjen Stark","Jon Snow"]
     },
     {
+      "id": "lannister",
       "name": "House Lannister",
       "words": "Hear me roar",
       "description": "House Lannister of Casterly Rock is one of the Great Houses of Westeros, one of its richest and most powerful families and oldest dynasties. It is also the current royal house of the Seven Kingdoms following the extinction of House Baratheon of King's Landing, which had been their puppet house anyway.The Lannisters rule over the Westerlands. Their seat is Casterly Rock, a massive rocky promontory overlooking the Sunset Sea which has had habitations and fortifications built into it over the millennia. They are the Lords Paramount of the Westerlands and Wardens of the West. As the new royal house, they also rule directly over the Crownlands from their seat of the Red Keep in King's Landing, the traditional seat of the royal family. House Lannister's Heraldry consists of a golden lion on a crimson background, and their House words are 'Hear me roar!', which is rarely mentioned. Their unofficial motto, which is as well known as the official one, is 'A Lannister always pays his debts' - which is used much more often and mostly in negative context, though it can also be used in the original, literal sense.",
@@ -16,6 +18,7 @@
       "house-members": ["Tyrion Lannister","Jamie Lannister","Cersei Lannister"]
     },
     {
+      "id": "tyrell",
       "name": "House Tyrell",
       "words": "Growing Strong",
       "description": "House Tyrell of Highgarden is one of the Great Houses of Westeros. It rules over the Reach, a vast, fertile, and heavily-populated region of southwestern Westeros, from their castle-seat, Highgarden. Formerly led by Lord Mace Tyrell, his mother, the indomitable Olenna Tyrell, stands as the last known member of the house. Mace's son Loras was a noted tournament knight (and, secretly, the lover of Lord Renly Baratheon). Mace's daughter Margaery married Renly when he crowned himself king, to cement the alliance between Renly and her father. Following Renly's death, Margaery was then married to King Joffrey Baratheon before his assassination at his wedding feast. She was then married to his younger brother, King Tommen Baratheon. Olenna Tyrell assumed House Tyrell's lordship as Margaery Tyrell, Loras Tyrell, and Mace Tyrell were killed by wildfire at the destruction of the Great Sept of Baelor. Under Lady Olenna, who has served as the head of the house since, House Tyrell has aligned itself with House Targaryen in opposition against Queen Cersei I for orchestrating the demise of most of the main branch of the Tyrell family.",
@@ -24,6 +27,7 @@
       "house-members": ["Lady Ollena Tyrell"]
     },
     {
+      "id": "greyjoy",
       "name":"House Greyjoy",
       "words": "We do not sow",
       "description": "House Greyjoy of Pyke is one of the Great Houses of Westeros. It rules over the Iron Islands, a harsh and bleak collection of islands off the west coast of Westeros, from the castle at Pyke. The head of the house is the Lord Reaper of Pyke. House Greyjoy's sigil is traditionally a golden kraken on a black field. Their house motto is 'We Do Not Sow', although the phrase 'What Is Dead May Never Die' is also closely associated with House Greyjoy and their bannermen, as they are associated with the faith of the Drowned God.House Greyjoy has been in open rebellion against the Iron Throne since the War of the Five Kings, during which it sought independence for the Iron Islands once more. However, following the death of King Balon Greyjoy and the election of his brother, Euron, as the new King of the Iron Islands, House Greyjoy has been divided between Euron and his followers, and Balon's surviving children, Yara and Theon, and their followers.",
@@ -33,6 +37,7 @@
 
     },
     {
+      "id": "targaryen",
       "name": "House Targaryen",
       "words": "Fire And Blood",
       "description": "House Targaryen is a former Great House of Westeros and was the ruling royal House of the Seven Kingdoms for three centuries since it conquered and unified the realm, before it was deposed during Robert's Rebellion and House Baratheon replaced it as the new royal House. The few surviving Targaryens fled into exile to the Free Cities of Essos across the Narrow Sea. Currently based on Dragonstone off of the eastern coast of Westeros, House Targaryen seeks to retake the Seven Kingdoms from House Lannister, who formally replaced House Baratheon as the royal House following the destruction of the Great Sept of Baelor.House Targaryen's sigil is a three-headed red dragon on a black background, and their words are 'Fire and Blood'.",

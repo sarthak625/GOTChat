@@ -13,7 +13,7 @@ app.get('/',function(req,res){
   });
 });
 
-app.get('/chatroom',function(req,res){
+app.get('/chatroom/:id',function(req,res){
   res.render('chatroom',{
     title:'Chat Menu'
   });

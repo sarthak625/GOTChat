@@ -149,14 +149,26 @@ form{
 .thumbnails{
   column-count: 4;
   column-gap: 0;
-
-  text-align: center;
-
+  margin-left: 300px;
+  margin-top: 70px;
 }
 
-.row{
-
-
+hr.choose-hr {
+    width: 80%;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.choose-hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
 
 .img-responsive{
@@ -198,7 +210,7 @@ form{
   .chatbox{
     margin: 1px;
     background-position: center;
-  }}
+  }
 
   form{
     display: inline-block;
@@ -206,5 +218,12 @@ form{
 
   #messages{
     height: 80%;
+  }
+
+  .thumbnails{
+    column-count: 2;
+    column-gap: 0;
+    margin-left: 10px;
+    margin-top: 30px;
   }
 }

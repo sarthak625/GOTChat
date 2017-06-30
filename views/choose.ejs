@@ -6,13 +6,13 @@
   <body>
     <div class="menu">
       <h1>Choose your house</h1>
-
+      <hr class="choose-hr">
         <div class="row">
             <div class="thumbnails">
               <%houseArr.forEach(function(house){%>
-
+              <a href="/chatroom/<%= house.id %>">
                 <img src="/img/<%= house.poster%>" class="img-thumbnail" alt="">
-
+              </a>
               <%})%>
           </div>
         </div>
