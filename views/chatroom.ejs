@@ -1,10 +1,24 @@
 <html>
   <head>
-    <% include partials/head %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/main.css">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+
+    <style>
+      .chatbox{
+        background: url('/img/<%=image%>');
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+      }
+    </style>
   </head>
 
   <body>
-
+      <img src="" alt="">
       <div class="chatbox">
         <div class="row">
           <div class="chat-main col-lg-7 col-sm-6">
@@ -31,6 +45,7 @@
 
 
     <%include partials/footer %>
-    <% include partials/script %>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.js"></script>
   </body>
 </html>
