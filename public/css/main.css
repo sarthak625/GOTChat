@@ -37,6 +37,11 @@ hr {
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
 
+#username{
+  padding: 10px;
+  width: 30%;
+}
+
 
 .container h1{
   letter-spacing: 12;
@@ -78,27 +83,9 @@ hr {
 Styles for chatroom
 =========================================================*/
 
-#userForm{
-  display: inline-block;
-  width: 80%;
-  height: 50%;
-  margin: 200px auto;
-  text-align: center;
-}
 
 
-#userForm h1{
-  color: white;
 
-}
-
-#submit{
-  margin-top: 10px;
-}
-
-#main{
-  display: none;
-}
 
 .m{
   width: 80%;
@@ -147,22 +134,6 @@ form{
   padding: 8px;
 }
 
-.scrollbar{
-  width: 5px;
-  height: 100%;
-  background: #49505a;
-  position: fixed;
-  top: 0;
-  right: 9px;
-  z-index: 1;
-}
-
-.slider{
-  width: 20px;
-  background: #5EAEE3;
-  border-radius: 10px;
-  left: -7px;
-}
 
 
 .chat-main{
@@ -281,5 +252,16 @@ hr.choose-hr:after {
     column-gap: 0;
     margin-left: 10px;
     margin-top: 30px;
+  }
+
+  #userForm{
+    margin-left: -5px;
+    text-align: left;
+    font-size: 0.5em;
+  }
+
+  #userForm h1{
+    font-size: 4em;
+    letter-spacing: 2;
   }
 }

@@ -22,13 +22,7 @@
       <div class="chatbox">
 
         <!-- User form-->
-        <div id="userForm">
-          <h1>Haaaallltttt..  Who  approaches <%= house%> </h1>
-          <form action="">
-            <input type="text" placeholder="Enter your name" class="form-control">
-            <button id="submit">Submit</button>
-          </form>
-        </div>
+      
 
 
         <div id="main" class="row">
@@ -37,7 +31,7 @@
 
               </ul>
 
-              <form action="" id="send-message">
+              <form id="send-message">
                 <div class="form-group">
                   <input type="text" id="message" autocomplete="off">
                   <button id="send">Send</button>
@@ -70,6 +64,7 @@
 
       $(function () {
         var socket = io.connect();
+
 
 
         $('#send-message').submit(function(){
