@@ -22,7 +22,11 @@
       <div class="chatbox">
 
         <!-- User form-->
-      
+        <div class="userForm">
+          <h1>Haaaltt... Who approaches <%= house %> </h1>
+          <input type="text" class="userName form-control" placeholder="Enter your name">
+          <button class="nameButton">Submit</button>
+        </div>
 
 
         <div id="main" class="row">
@@ -31,13 +35,13 @@
 
               </ul>
 
-              <form id="send-message">
+              <div id="send-message">
                 <div class="form-group">
                   <input type="text" id="message" autocomplete="off">
                   <button id="send">Send</button>
                 </div>
 
-              </form>
+              </div>
 
 
           </div>
@@ -46,7 +50,7 @@
           <div class="people col-lg-4 col-sm-3">
             <h3>Online Users</h3>
             <ul class="people-list" id="users">
-              <li></li>
+
             </ul>
           </div>
         </div>
@@ -63,22 +67,40 @@
 
 
       $(function () {
-        var socket = io.connect();
+        var socket = io();
+        var name;
+        //As the user enters his name
+        $('.nameButton').on('click',function(){
+          $('#main').show();
+          $('.userForm').hide();
+          name = $('.userName').val();
 
 
+        });
 
-        $('#send-message').submit(function(){
+        //At every new message
+        $('#send').on('click',function(){
           socket.emit('chat message', $('#message').val());
           $('#message').val('');
           return false;
+        })
+
+        //Add the message to the ul
+        socket.on('chat message', function(data){
+
+          $('#messages').append('<div class="m"><strong>'+data+'</div>');
+
+
         });
 
-        socket.on('chat message', function(msg){
-
-          $('#messages').append('<div class="m">'+msg+'</div>');
-
-
+        socket.on('user joined',function(){
+          for (var i=0;i< users.length;i++){
+            console.log(users[i]);
+            $('.people-list').append('<li>'+users[i]+'</li>');
+          }
         });
+
+
 
 
 

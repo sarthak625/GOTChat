@@ -84,12 +84,6 @@ Styles for chatroom
 
 
 
-.m{
-  width: 80%;
-  height: auto;
-  text-align: left;
-  color: white;
-}
 
 .people h3
 {
@@ -118,6 +112,9 @@ form{
 #messages{
   height: 90%;
   overflow: hidden;
+  margin: 0;
+  display: block;
+  padding: 0;
 }
 
 #message{
@@ -157,11 +154,41 @@ form{
   background: -moz-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
   background: -ms-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
   background: -o-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
-
-
-
 }
 
+
+.userForm{
+    width: 70%;
+    margin: 0;
+    display: inline-block;
+    margin-top: 15%;
+}
+.userForm h1{
+  color: white;
+}
+
+#main{
+  display: none;
+}
+
+.nameButton{
+  margin-top: 12px;
+  padding: 6px;
+}
+
+.m{
+  display: block;
+
+  text-align: left;
+  color: white;
+
+  margin-top: 10px;
+  overflow: none;
+}
+
+.users{
+  color: blue;
+}
 
 /*===============================================================================
   Styles for choose

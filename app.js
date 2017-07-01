@@ -49,7 +49,9 @@ app.get('/chatroom',function(req,res){
 
       res.render('chatroom',{
           title:'Chat Menu | ',
-          image: 'khal-drogo.png'
+          image: 'khal-drogo.png',
+          house: 'Khal Drogo',
+          users: users
         });
 
 
@@ -77,7 +79,8 @@ app.get('/chatroom/:id?',function(req,res){
       res.render('chatroom',{
         title: id.toUpperCase()  + ' CHAT',
         image: image,
-        house: house
+        house: house,
+        users: users
       })
     }
     else{
@@ -89,6 +92,13 @@ console.log('A user connected');
 io.on('connection',function(socket){
   conn+=1;
   console.log('A user connected: '+conn+' users');
+  socket.on('add user',function(username){
+    users.push(username);
+    socket.broadcast.emit('user joined',{
+      username: username
+    })
+  })
+
   socket.on('disconnect',function(data){
 
     //io.emit('chat message',"");
